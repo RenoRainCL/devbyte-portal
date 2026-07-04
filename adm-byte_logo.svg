@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0b132b; }
+      .accent { fill: #00f5d4; }
+      .light { fill: #ffffff; }
+      .gray { fill: #5c7aff; }
+      .text-main { font-family: 'Montserrat', 'Helvetica Neue', sans-serif; font-weight: 800; font-size: 46px; fill: #ffffff; letter-spacing: 1px; }
+      .text-sub { font-family: 'Montserrat', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 14px; fill: #5c7aff; letter-spacing: 4px; }
+    </style>
+  </defs>
+
+  <!-- Fondo Corporativo Oscuro (Idéntico a DEV-BYTE) -->
+  <rect width="100%" height="100%" class="bg" rx="12"/>
+
+  <!-- Isotipo: Fusión Edificios, Estructura y Código (</>) -->
+  <g transform="translate(55, 45)">
+    <!-- Bracket Izquierdo / Entorno (<) -->
+    <path d="M 35 110 L 10 70 L 35 30" stroke="#00f5d4" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    
+    <!-- Torre 1 (Edificio Principal) -->
+    <rect x="45" y="45" width="25" height="65" fill="#ffffff" />
+    <!-- Ventanas/Líneas de estructura Torre 1 -->
+    <line x1="57" y1="55" x2="57" y2="100" stroke="#0b132b" stroke-width="3" stroke-dasharray="4 4" />
+    
+    <!-- Torre 2 (Edificio Secundario en perspectiva) -->
+    <rect x="75" y="30" width="30" height="80" fill="#ffffff" opacity="0.85" />
+    <!-- Ventanas/Líneas de estructura Torre 2 -->
+    <line x1="85" y1="40" x2="85" y2="100" stroke="#0b132b" stroke-width="3" stroke-dasharray="4 4" />
+    <line x1="95" y1="40" x2="95" y2="100" stroke="#0b132b" stroke-width="3" stroke-dasharray="4 4" />
+    
+    <!-- Bracket Derecho / Entorno (>) -->
+    <path d="M 115 30 L 140 70 L 115 110" stroke="#5c7aff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- Tipografía Profesional ADM-BYTE -->
+  <text x="230" y="102" class="text-main">ADM<tspan class="accent">-</tspan>BYTE</text>
+  <text x="233" y="132" class="text-sub">PROPERTY MANAGEMENT</text>
+</svg>
