@@ -17,7 +17,7 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="geo.region" content="CL">
     <meta name="geo.country" content="Chile">
-    <link rel="canonical" href="https://dev-byte.cl/">
+    <link rel="canonical" href="https://dev-byte.lat/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -25,7 +25,7 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
     <meta property="og:site_name" content="DEV-BYTE">
     <meta property="og:title" content="DEV-BYTE — Software Profesional para Chile">
     <meta property="og:description" content="Plataformas digitales especializadas para administración de propiedades y servicios de seguros. Tecnología hecha en Chile, para Chile.">
-    <meta property="og:image" content="https://dev-byte.cl/dev-byte_logo.svg">
+    <meta property="og:image" content="https://dev-byte.lat/dev-byte_logo.svg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -39,8 +39,8 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
       "@type": "Organization",
       "name": "DEV-BYTE",
       "description": "Desarrollo de software especializado para gestión de condominios y corredoras de seguros en Chile",
-      "url": "https://dev-byte.cl",
-      "logo": "https://dev-byte.cl/dev-byte_logo.svg",
+      "url": "https://dev-byte.lat",
+      "logo": "https://dev-byte.lat/dev-byte_logo.svg",
       "areaServed": { "@type": "Country", "name": "Chile" },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -682,7 +682,7 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
     <ul class="nav-links">
         <li><a href="#plataformas">Plataformas</a></li>
         <li><a href="#tecnologia">Tecnología</a></li>
-        <li><a href="mailto:contacto@dev-byte.cl" class="nav-contact">
+        <li><a href="mailto:contacto@dev-byte.lat" class="nav-contact">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             Contacto
         </a></li>
@@ -707,7 +707,7 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
                 Explorar plataformas
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="mailto:contacto@dev-byte.cl" class="btn-ghost">
+            <a href="mailto:contacto@dev-byte.lat" class="btn-ghost">
                 Hablar con el equipo
             </a>
         </div>
@@ -800,18 +800,19 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
                     Sistema integral de administración de condominios y edificios residenciales,
                     diseñado conforme a la <strong>Ley 21.442</strong> de Copropiedad Inmobiliaria.
                     Digitaliza la operación completa: desde la gestión de cuotas hasta la rendición
-                    de cuentas ante la Asamblea de Copropietarios.
+                    de cuentas ante la Asamblea de Copropietarios, con una app móvil complementaria
+                    para residentes y conserjes.
                 </p>
 
                 <ul class="feat-grid" aria-label="Funcionalidades ADM-BYTE">
-                    <li><span class="fi">✦</span>Gastos comunes y cuotas</li>
-                    <li><span class="fi">✦</span>Control de morosidad</li>
-                    <li><span class="fi">✦</span>Rendición de cuentas</li>
-                    <li><span class="fi">✦</span>Panel del comité</li>
-                    <li><span class="fi">✦</span>Comunicados a residentes</li>
-                    <li><span class="fi">✦</span>Gestión de proveedores</li>
-                    <li><span class="fi">✦</span>DTE — Boletas y facturas SII</li>
-                    <li><span class="fi">✦</span>Bitácora y novedades</li>
+                    <li><span class="fi">✦</span>Gastos comunes y prorrateo</li>
+                    <li><span class="fi">✦</span>Conciliación bancaria CSV/XLSX</li>
+                    <li><span class="fi">✦</span>App móvil iOS/Android + push</li>
+                    <li><span class="fi">✦</span>Asamblea de copropietarios</li>
+                    <li><span class="fi">✦</span>Remuneraciones — Previred y BHE</li>
+                    <li><span class="fi">✦</span>Multi-torre por condominio</li>
+                    <li><span class="fi">✦</span>Chatbot IA (Gemini)</li>
+                    <li><span class="fi">✦</span>Auditoría y bitácora completa</li>
                 </ul>
             </div>
 
@@ -852,19 +853,19 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
                 <p class="pdesc">
                     Plataforma de gestión operacional para <strong>corredoras de seguros</strong>
                     registradas en la CMF. Centraliza cartera de clientes, pólizas vigentes,
-                    renovaciones y siniestros en un único entorno seguro, con trazabilidad completa
-                    y reportes regulatorios listos para auditoría.
+                    renovaciones y siniestros en un único entorno seguro, con arquitectura
+                    multi-tenant que opera varias corredoras sobre la misma instalación.
                 </p>
 
                 <ul class="feat-grid" aria-label="Funcionalidades INSURE-BYTE">
-                    <li><span class="fi">✦</span>Cartera de clientes</li>
-                    <li><span class="fi">✦</span>Gestión de pólizas</li>
-                    <li><span class="fi">✦</span>Seguimiento de siniestros</li>
-                    <li><span class="fi">✦</span>Control de comisiones</li>
-                    <li><span class="fi">✦</span>Alertas de vencimiento</li>
-                    <li><span class="fi">✦</span>Informes CMF</li>
-                    <li><span class="fi">✦</span>Multi-compañía aseguradora</li>
-                    <li><span class="fi">✦</span>Portal de cotizaciones</li>
+                    <li><span class="fi">✦</span>Carga masiva CSV todo-o-nada</li>
+                    <li><span class="fi">✦</span>Endosos con historial inmutable</li>
+                    <li><span class="fi">✦</span>Comisión split corredora/vendedor</li>
+                    <li><span class="fi">✦</span>Expediente de siniestro CMF</li>
+                    <li><span class="fi">✦</span>Multi-tenant · varias corredoras</li>
+                    <li><span class="fi">✦</span>Portal cliente + chatbot IA</li>
+                    <li><span class="fi">✦</span>Portal aseguradora — API REST</li>
+                    <li><span class="fi">✦</span>Cifrado PII (AES-256-GCM)</li>
                 </ul>
             </div>
 
@@ -955,7 +956,7 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
         <ul class="footer-nav">
             <li><a href="#plataformas">Plataformas</a></li>
             <li><a href="#tecnologia">Tecnología</a></li>
-            <li><a href="mailto:contacto@dev-byte.cl">contacto@dev-byte.cl</a></li>
+            <li><a href="mailto:contacto@dev-byte.lat">contacto@dev-byte.lat</a></li>
         </ul>
     </div>
 </footer>

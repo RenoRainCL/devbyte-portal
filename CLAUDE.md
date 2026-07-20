@@ -66,5 +66,5 @@ All three SVG logos are inline SVG files in the project root — keep them here 
 ## SEO notes
 
 - `index.php` includes JSON-LD `Organization` schema with `hasOfferCatalog` for both products.
-- Canonical URL is hardcoded to `https://dev-byte.cl/` — update if the domain changes.
-- `contacto@dev-byte.cl` is a placeholder email — replace before going live.
+- Canonical URL is hardcoded to `https://dev-byte.lat/` — this is the live production domain (the `.cl` domain does not resolve yet). Update if `.cl` goes live and becomes canonical.
+- `contacto@dev-byte.lat` is the contact email used across nav, hero and footer.
