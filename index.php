@@ -25,12 +25,16 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
     <meta property="og:site_name" content="DEV-BYTE">
     <meta property="og:title" content="DEV-BYTE — Software Profesional para Chile">
     <meta property="og:description" content="Plataformas digitales especializadas para administración de propiedades y servicios de seguros. Tecnología hecha en Chile, para Chile.">
-    <meta property="og:image" content="https://dev-byte.lat/dev-byte_logo.svg">
+    <meta property="og:image" content="https://dev-byte.lat/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://dev-byte.lat/">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DEV-BYTE — Software Profesional para Chile">
     <meta name="twitter:description" content="Plataformas digitales especializadas para la gestión de condominios y corredoras de seguros en Chile.">
+    <meta name="twitter:image" content="https://dev-byte.lat/og-image.png">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -387,6 +391,16 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
 
         .pcard-logo { height: 48px; width: auto; }
 
+        .pcard-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 0.625rem;
+        }
+
         .badge {
             display: inline-flex;
             align-items: center;
@@ -682,6 +696,7 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
     <ul class="nav-links">
         <li><a href="#plataformas">Plataformas</a></li>
         <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="mailto:contacto@dev-byte.lat" class="nav-contact">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             Contacto
@@ -781,7 +796,10 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
         <!-- ╔══════════════ ADM-BYTE ══════════════╗ -->
         <article class="pcard adm" aria-label="ADM-BYTE — Administración de condominios">
             <div class="pcard-head">
-                <img src="adm-byte_logo.svg" alt="ADM-BYTE Property Management" class="pcard-logo">
+                <div>
+                    <img src="adm-byte_logo.svg" alt="ADM-BYTE Property Management" class="pcard-logo">
+                    <h3 class="pcard-name">ADM-BYTE</h3>
+                </div>
                 <?php if ($adm_installed): ?>
                     <span class="badge b-live"><span class="badge-dot"></span>Operativo</span>
                 <?php else: ?>
@@ -835,7 +853,10 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
         <!-- ╔════════════ INSURE-BYTE ═════════════╗ -->
         <article class="pcard ins" aria-label="INSURE-BYTE — Corredoras de seguros">
             <div class="pcard-head">
-                <img src="insure-byte_logo.svg" alt="INSURE-BYTE Insurance Services" class="pcard-logo">
+                <div>
+                    <img src="insure-byte_logo.svg" alt="INSURE-BYTE Insurance Services" class="pcard-logo">
+                    <h3 class="pcard-name">INSURE-BYTE</h3>
+                </div>
                 <?php if ($insure_installed): ?>
                     <span class="badge b-live"><span class="badge-dot"></span>Operativo</span>
                 <?php else: ?>
@@ -956,6 +977,7 @@ $insure_installed = is_dir(__DIR__ . '/insure') && (file_exists(__DIR__ . '/insu
         <ul class="footer-nav">
             <li><a href="#plataformas">Plataformas</a></li>
             <li><a href="#tecnologia">Tecnología</a></li>
+            <li><a href="/blog/">Blog</a></li>
             <li><a href="mailto:contacto@dev-byte.lat">contacto@dev-byte.lat</a></li>
         </ul>
     </div>
