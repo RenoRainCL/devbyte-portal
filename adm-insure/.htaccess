@@ -1,0 +1,8 @@
+# La portada y los PDF pasan por aviso.php, que avisa por correo cuando un
+# piloto los abre (interruptor PILOTO_AVISO_ACTIVO en ~/.env de ADM-insure).
+# Las URL públicas no cambian.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(index\.html)?$ aviso.php [L]
+    RewriteRule ^pdf/([A-Za-z0-9._-]+\.pdf)$ aviso.php?pdf=$1 [L]
+</IfModule>
